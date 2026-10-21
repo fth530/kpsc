@@ -1,0 +1,170 @@
+{
+  "_comment": "TODO: Antigravity - 81 ilin tam verisi ve genişletilmiş coğrafi veri seti bu JSON dosyasına eklenecektir.",
+  "provinces": [
+    {
+      "id": "42",
+      "name": "Konya",
+      "region": "İç Anadolu",
+      "svgPath": "M 480 260 L 530 250 L 550 300 L 510 330 L 460 300 Z",
+      "centerCoords": { "x": 500, "y": 280 },
+      "masteryPercentage": 75,
+      "description": "Türkiye'nin yüzölçümü en büyük ili. Karstik obruk platoları ve tahıl ambarı ile ünlü."
+    },
+    {
+      "id": "07",
+      "name": "Antalya",
+      "region": "Akdeniz",
+      "svgPath": "M 380 320 L 440 310 L 470 350 L 400 370 Z",
+      "centerCoords": { "x": 420, "y": 340 },
+      "masteryPercentage": 80,
+      "description": "Teke ve Taşeli platoları, polye ve dolin gibi karstik şekillerin yoğun olduğu turizm ve tarım merkezi."
+    },
+    {
+      "id": "50",
+      "name": "Nevşehir",
+      "region": "İç Anadolu",
+      "svgPath": "M 550 230 L 580 230 L 580 260 L 550 260 Z",
+      "centerCoords": { "x": 565, "y": 245 },
+      "masteryPercentage": 90,
+      "description": "Erciyes ve Hasan Dağı tüflerinin aşınmasıyla oluşan Peri Bacaları ve Kapadokya bölgesi."
+    },
+    {
+      "id": "13",
+      "name": "Bitlis",
+      "region": "Doğu Anadolu",
+      "svgPath": "M 820 220 L 860 210 L 870 250 L 830 250 Z",
+      "centerCoords": { "x": 845, "y": 230 },
+      "masteryPercentage": 45,
+      "description": "Nemrut Dağı Kalderası ve Van Gölü çevresindeki volkanik oluşumlar."
+    },
+    {
+      "id": "72",
+      "name": "Batman",
+      "region": "Güneydoğu Anadolu",
+      "svgPath": "M 800 280 L 830 280 L 830 310 L 800 310 Z",
+      "centerCoords": { "x": 815, "y": 295 },
+      "masteryPercentage": 60,
+      "description": "Raman Dağı Türkiye'de petrolün ilk çıkarıldığı önemli maden ve enerji bölgesi."
+    },
+    {
+      "id": "61",
+      "name": "Trabzon",
+      "region": "Karadeniz",
+      "svgPath": "M 700 120 L 740 120 L 740 150 L 700 150 Z",
+      "centerCoords": { "x": 720, "y": 135 },
+      "masteryPercentage": 50,
+      "description": "Boyuna kıyı tipi, dik dağlar ve Podzolik/Kahverengi Orman toprakları."
+    }
+  ],
+  "features": [
+    {
+      "id": "f_obruk_karapinar",
+      "title": "Karapınar Obruk Platosu",
+      "category": "karst",
+      "provinceId": "42",
+      "coords": { "x": 500, "y": 275 },
+      "badgeText": "Karstik Çökme",
+      "examFrequency": "%95 ÖSYM Favorisi",
+      "formationLogic": {
+        "cause": "Kalker (Kireçtaşı) + Aşırı Yeraltı Suyu Çekimi",
+        "effect": "Tavan Çökmesi ve Derin Dairesel Obruklar",
+        "summary": "Kimyasal tortul kayaçlar yeraltı suyu ile erir, oluşan mağaraların tavanı çökerek obrukları meydana getirir."
+      },
+      "visualHint": "Yeraltında boşluk oluşan kireçtaşı katmanının aniden çökmesi sonucu oluşan dik kenarlı kuyu.",
+      "examTip": "KPSS'de 'Tarımsal sulamaya bağlı yeraltı suyu azalması sonucu hangi yer şekli artar?' diye sorulursa cevap OBRUK'tur!",
+      "pastExamYears": [2021, 2023]
+    },
+    {
+      "id": "f_nemrut_kaldera",
+      "title": "Nemrut Dağı Kalderası",
+      "category": "mountains",
+      "provinceId": "13",
+      "coords": { "x": 845, "y": 225 },
+      "badgeText": "Volkanik Kaldera",
+      "examFrequency": "%85 Çıkma İhtimali",
+      "formationLogic": {
+        "cause": "Volkanik Patlama + Tepe Çökmesi",
+        "effect": "Kaldera Gölü (Nemrut Gölü)",
+        "summary": "Volkan konisinin patlama sonrası çökmesiyle oluşan Türkiye'nin en büyük kaldera gölüdür."
+      },
+      "visualHint": "Yanardağ tepesinde patlama ile oluşan devasa çanak ve içindeki göl.",
+      "examTip": "Nemrut Dağı Bitlis'tedir (Adıyaman'daki Nemrut Kommagene heykelleri ile karıştırma!).",
+      "pastExamYears": [2020, 2022]
+    },
+    {
+      "id": "f_peri_bacalari",
+      "title": "Kapadokya Peri Bacaları",
+      "category": "karst",
+      "provinceId": "50",
+      "coords": { "x": 565, "y": 245 },
+      "badgeText": "Tüf & Akarsu Aşınımı",
+      "examFrequency": "%90 ÖSYM Favorisi",
+      "formationLogic": {
+        "cause": "Volkanik Tüf + Akarsu ve Rüzgar Aşınımı",
+        "effect": "Şapkalı Peri Bacaları",
+        "summary": "Volkanlardan çıkan bazalt ve tüf tabakalarının sel suları ve rüzgarla farklı dirençte aşınması."
+      },
+      "visualHint": "Üstte sert bazalt şapka, altta yumuşak tüf sütun.",
+      "examTip": "Peri bacalarının oluşumunda hem İÇ KUVVET (Volkanizma) hem DIŞ KUVVET (Akarsu/Rüzgar) etkilidir.",
+      "pastExamYears": [2019, 2023]
+    },
+    {
+      "id": "f_raman_petrol",
+      "title": "Raman Dağı Petrol Sahası",
+      "category": "mines",
+      "provinceId": "72",
+      "coords": { "x": 815, "y": 295 },
+      "badgeText": "Enerji / Petrol",
+      "examFrequency": "%80 Çıkma İhtimali",
+      "formationLogic": {
+        "cause": "Organik Tortullaşma + Jeolojik Kapan",
+        "effect": "Ham Petrol Rezervi",
+        "summary": "Türkiye'de ilk petrolün çıkarıldığı (1940) yer Raman Dağı'dır."
+      },
+      "visualHint": "Güneydoğu Anadolu kırıklı yapısında petrol kuyuları.",
+      "examTip": "Batman - Raman denince akla ilk gelen yerli petrol üretimidir.",
+      "pastExamYears": [2018, 2021]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "typeA_logicChain",
+      "targetFeatureId": "f_obruk_karapinar",
+      "targetProvinceId": "42",
+      "questionText": "Aşağıdaki coğrafi etkenleri doğru birleştirerek oluşan yer şeklini ve ili bulun!",
+      "correctChain": {
+        "causeRock": "rock_kirectasi",
+        "causeForce": "force_yeralti_suyu",
+        "resultFormation": "formation_obruk"
+      },
+      "chainOptions": [
+        { "id": "rock_kirectasi", "title": "Kalker (Kireçtaşı)", "category": "rock", "tag": "Kimyasal Tortul" },
+        { "id": "force_yeralti_suyu", "title": "Yeraltı Suyu Eritmesi", "category": "force", "tag": "Aşınım" },
+        { "id": "rock_granit", "title": "Granit Kayaç", "category": "rock", "tag": "Derinlik Volkanizması" },
+        { "id": "force_buzul", "title": "Buzul Aşınımı", "category": "force", "tag": "Yüksek Dağ" }
+      ],
+      "provinceOptions": ["Konya", "Antalya", "Nevşehir", "Sivas"],
+      "correctProvinceId": "42",
+      "explanation": "Tebrikler! Kalker (Kireçtaşı) yeraltı suları tarafından eritilip tavan çöktüğünde Konya çevresinde OBRUK PLATOSU oluşur.",
+      "xpReward": 25
+    },
+    {
+      "id": "q2",
+      "type": "typeB_blankMap",
+      "targetFeatureId": "f_peri_bacalari",
+      "targetProvinceId": "50",
+      "questionText": "Haritada parlayan alanda volkanik tüf ve akarsu aşınımı ile oluşan ikonik yapılar hangi ilimizdedir?",
+      "correctChain": {
+        "causeRock": "rock_tuf",
+        "causeForce": "force_akarsu",
+        "resultFormation": "formation_peribacasi"
+      },
+      "chainOptions": [],
+      "provinceOptions": ["Nevşehir", "Kayseri", "Niğde", "Aksaray"],
+      "correctProvinceId": "50",
+      "explanation": "Nevşehir - Kapadokya bölgesinde Erciyes ve Hasan Dağı tüflerinin sel suları ve rüzgarla aşınmasıyla Peri Bacaları oluşmuştur.",
+      "xpReward": 20
+    }
+  ]
+}
