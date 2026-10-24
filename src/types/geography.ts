@@ -1,6 +1,6 @@
 // TODO: Antigravity - Projeyi devraldığınızda bu tür tanımlarını yeni veri şemalarınıza göre genişletebilirsiniz.
 
-export type LayerType = 'all' | 'mountains' | 'karst' | 'mines' | 'soils' | 'faults';
+export type LayerType = 'all' | 'mountains' | 'karst' | 'mines' | 'soils' | 'faults' | 'coasts';
 
 export interface Province {
   id: string; // e.g. "42" for Konya
@@ -30,6 +30,21 @@ export interface GeographicalFeature {
   pastExamYears: number[];
 }
 
+export interface Flashcard {
+  id: string;
+  category: LayerType;
+  title: string;
+  subtitle: string;
+  diagramType: 'boyunaKiyi' | 'enineKiyi' | 'horstGraben' | 'kivrimDag';
+  frontHint: string;
+  backLogic: {
+    cause: string;
+    effect: string;
+    mnemonic: string;
+    examTip: string;
+  };
+}
+
 export interface LogicChainItem {
   id: string;
   title: string;
@@ -43,15 +58,14 @@ export interface QuizQuestion {
   targetFeatureId: string;
   targetProvinceId: string;
   questionText: string;
-  // Type A specific
+  topicTag: string;
   correctChain: {
-    causeRock: string; // e.g. "rock_kirectasi"
-    causeForce: string; // e.g. "force_yeralti_suyu"
-    resultFormation: string; // e.g. "formation_obruk"
+    causeRock: string;
+    causeForce: string;
+    resultFormation: string;
   };
   chainOptions: LogicChainItem[];
-  // Type B specific
-  provinceOptions?: string[]; // Province IDs or Names
+  provinceOptions?: string[];
   correctProvinceId?: string;
   explanation: string;
   xpReward: number;

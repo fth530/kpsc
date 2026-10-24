@@ -32,6 +32,8 @@ export default function RootLayout() {
         <Stack.Screen name="onboarding" />
         <Stack.Screen name="map" />
         <Stack.Screen name="quiz" />
+        <Stack.Screen name="flashcards" />
+        <Stack.Screen name="weak-topics" />
       </Stack>
     </SafeAreaProvider>
   );

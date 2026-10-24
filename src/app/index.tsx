@@ -24,11 +24,13 @@ import {
   HelpCircle,
   Trophy,
   User,
+  AlertTriangle,
 } from 'lucide-react-native';
 
 export default function DashboardScreen() {
   const router = useRouter();
   const userStats = useGeographyStore((state: any) => state.userStats);
+  const weakTopics = useGeographyStore((state: any) => state.weakTopics);
 
   const bentoModules = [
     {
@@ -45,7 +47,7 @@ export default function DashboardScreen() {
       badge: 'Jeomorfoloji',
       progress: '%55 Orta',
       icon: Mountain,
-      route: '/map',
+      route: '/flashcards',
     },
     {
       id: 'karst',
@@ -66,10 +68,10 @@ export default function DashboardScreen() {
     {
       id: 'soils',
       title: 'Toprak & Kıyılar',
-      badge: 'Görsel Hafıza',
+      badge: 'Görsel Şemalı',
       progress: '%30 Başlangıç',
       icon: Waves,
-      route: '/map',
+      route: '/flashcards',
     },
     {
       id: 'quiz',
@@ -83,6 +85,7 @@ export default function DashboardScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
+      {/* Top Header */}
       <View style={styles.header}>
         <View style={styles.brandGroup}>
           <Compass size={24} color="#10B981" />
@@ -90,10 +93,13 @@ export default function DashboardScreen() {
         </View>
 
         <View style={styles.statsGroup}>
-          <View style={styles.streakBadge}>
+          <TouchableOpacity
+            style={styles.streakBadge}
+            onPress={() => router.push('/weak-topics')}
+          >
             <Flame size={16} color="#F59E0B" />
             <Text style={styles.streakText}>{userStats.streak} Gün</Text>
-          </View>
+          </TouchableOpacity>
           <View style={styles.xpBadge}>
             <Zap size={16} color="#10B981" />
             <Text style={styles.xpText}>{userStats.xp} XP</Text>
@@ -102,6 +108,7 @@ export default function DashboardScreen() {
       </View>
 
       <ScrollView contentContainerStyle={styles.scrollContent}>
+        {/* Mastery Progress Card */}
         <View style={styles.masteryCard}>
           <View style={styles.masteryHeader}>
             <Text style={styles.masteryTitle}>Türkiye Hakimiyet Oranı</Text>
@@ -126,6 +133,26 @@ export default function DashboardScreen() {
           </Text>
         </View>
 
+        {/* Weak Topics Quick Action Card */}
+        {weakTopics.length > 0 && (
+          <TouchableOpacity
+            style={styles.weakTopicsCard}
+            onPress={() => router.push('/weak-topics')}
+          >
+            <View style={styles.weakLeft}>
+              <AlertTriangle size={20} color="#F59E0B" />
+              <View>
+                <Text style={styles.weakTitle}>Zayıf Bölgelerin Var!</Text>
+                <Text style={styles.weakSub}>
+                  {weakTopics.length} konu tekrar listende seni bekliyor.
+                </Text>
+              </View>
+            </View>
+            <Text style={styles.weakActionText}>İncele →</Text>
+          </TouchableOpacity>
+        )}
+
+        {/* Hero Quick Start Card */}
         <View style={styles.heroCard}>
           <View style={styles.heroHeader}>
             <Text style={styles.heroBadge}>GÜNÜN COĞRAFİ KEŞFİ</Text>
@@ -144,8 +171,10 @@ export default function DashboardScreen() {
           </TouchableOpacity>
         </View>
 
+        {/* Bento Grid Header */}
         <Text style={styles.sectionHeading}>Öğrenme Modülleri</Text>
 
+        {/* Bento Grid Layout */}
         <View style={styles.bentoGrid}>
           {bentoModules.map((item) => {
             const IconComp = item.icon;
@@ -172,6 +201,7 @@ export default function DashboardScreen() {
         </View>
       </ScrollView>
 
+      {/* Docked Bottom Navigation Bar */}
       <View style={styles.bottomNav}>
         <TouchableOpacity style={styles.navItem}>
           <Compass size={22} color="#10B981" />
@@ -185,13 +215,13 @@ export default function DashboardScreen() {
           <HelpCircle size={22} color="#64748B" />
           <Text style={styles.navText}>Testler</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity style={styles.navItem} onPress={() => router.push('/weak-topics')}>
           <Trophy size={22} color="#64748B" />
-          <Text style={styles.navText}>Sıralama</Text>
+          <Text style={styles.navText}>Zayıf Listem</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity style={styles.navItem} onPress={() => router.push('/flashcards')}>
           <User size={22} color="#64748B" />
-          <Text style={styles.navText}>Profil</Text>
+          <Text style={styles.navText}>Kartlar</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -304,6 +334,36 @@ const styles = StyleSheet.create({
   masterySubtext: {
     fontSize: 12,
     color: '#64748B',
+  },
+  weakTopicsCard: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: '#FFFBEB',
+    padding: 14,
+    borderRadius: 18,
+    borderWidth: 1,
+    borderColor: '#F59E0B',
+    marginBottom: 16,
+  },
+  weakLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+  },
+  weakTitle: {
+    fontSize: 13,
+    fontWeight: '800',
+    color: '#0F172A',
+  },
+  weakSub: {
+    fontSize: 11,
+    color: '#64748B',
+  },
+  weakActionText: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: '#F59E0B',
   },
   heroCard: {
     backgroundColor: '#0F172A',

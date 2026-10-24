@@ -126,6 +126,64 @@
       "pastExamYears": [2018, 2021]
     }
   ],
+  "flashcards": [
+    {
+      "id": "fc1",
+      "category": "coasts",
+      "title": "Boyuna Kıyı Tipi",
+      "subtitle": "Karadeniz ve Akdeniz Kıyıları",
+      "diagramType": "boyunaKiyi",
+      "frontHint": "Dağların denize PARALEL uzandığı kıyılarda görülür. Falez (yalıyar) yaygındır.",
+      "backLogic": {
+        "cause": "Dağların kıyı çizgisine paralel uzanması + Dalga aşındırması",
+        "effect": "Koy, körfez, doğal liman azdır. Hinterlant (art bölge) dar, ulaşım geçitlerle sağlanır.",
+        "mnemonic": "BOYUNA = Paralel Dağlar + Dik Falezler",
+        "examTip": "KPSS'de 'Hangi kıyıda falez oluşumu ve kıyı ile iç kesim arası ulaşım zordur?' yanıtı Boyuna Kıyı Tipi'dir."
+      }
+    },
+    {
+      "id": "fc2",
+      "category": "coasts",
+      "title": "Enine Kıyı Tipi",
+      "subtitle": "Ege Bölgesi Kıyıları",
+      "diagramType": "enineKiyi",
+      "frontHint": "Dağların denize DİK uzandığı kıyılarda görülür. Girinti-çıkıntı ve koy sayısı çoktur.",
+      "backLogic": {
+        "cause": "Horst ve Grabenlerin denize dik dik uzanması",
+        "effect": "Kıyı ile iç kesim arası ulaşım kolaydır, denizel iklim iç kesimlere sokulur.",
+        "mnemonic": "ENİNE = Dik Dağlar + Geniş Hinterlant",
+        "examTip": "Ege'de gerçek kıyı uzunluğu ile kuş uçuşu kıyı uzunluğu arasındaki farkın fazla olmasının nedeni Enine Kıyı Tipi'dir."
+      }
+    },
+    {
+      "id": "fc3",
+      "category": "mountains",
+      "title": "Horst - Graben (Kırık Dağlar)",
+      "subtitle": "Ege Kırık Dağ Oluşumu",
+      "diagramType": "horstGraben",
+      "frontHint": "Sert tortul tabakaların yan basınçlarla KIRILMASI sonucu yüksekte kalan kısım (Horst), çöken kısım (Graben) olur.",
+      "backLogic": {
+        "cause": "Sert Arazi Ara Tabakası + Tektonik Sıkışma",
+        "effect": "Horst (Yüksek Dağlar: Yunt, Bozdağ, Aydın) / Graben (Çöküntü Ovası: Gediz, Menderes)",
+        "mnemonic": "KIRIK = Horst (Yüksek) + Graben (Çöküntü)",
+        "examTip": "KPSS Şifresi: Kaz, Madra, Yunt, Bozdağlar, Aydın, Menteşe dağları (KazMa Yutmuş Boz Ayı Menteşeli) Kırık dağlardır!"
+      }
+    },
+    {
+      "id": "fc4",
+      "category": "mountains",
+      "title": "Antiklinal - Senklinal (Kıvrım Dağlar)",
+      "subtitle": "Toroslar ve Kuzey Anadolu Dağları",
+      "diagramType": "kivrimDag",
+      "frontHint": "Esnek tortul tabakaların yan basınçlarla KIVRILMASI sonucu kubbeleşen kısım (Antiklinal), çukurlaşan kısım (Senklinal) olur.",
+      "backLogic": {
+        "cause": "Esnek Tortul Tabaka + Orojenez (Dağ Oluşumu)",
+        "effect": "Yüksek Kısım: Antiklinal / Çukur Kısım: Senklinal",
+        "mnemonic": "KIVRIM = Esnek Katman + Antiklinal/Senklinal",
+        "examTip": "Türkiye'deki dağların büyük çoğunluğu (Kuzey Anadolu Dağları ve Toroslar) KIVRIM dağlarıdır."
+      }
+    }
+  ],
   "questions": [
     {
       "id": "q1",
@@ -133,6 +191,7 @@
       "targetFeatureId": "f_obruk_karapinar",
       "targetProvinceId": "42",
       "questionText": "Aşağıdaki coğrafi etkenleri doğru birleştirerek oluşan yer şeklini ve ili bulun!",
+      "topicTag": "Karstik Obruklar",
       "correctChain": {
         "causeRock": "rock_kirectasi",
         "causeForce": "force_yeralti_suyu",
@@ -155,6 +214,7 @@
       "targetFeatureId": "f_peri_bacalari",
       "targetProvinceId": "50",
       "questionText": "Haritada parlayan alanda volkanik tüf ve akarsu aşınımı ile oluşan ikonik yapılar hangi ilimizdedir?",
+      "topicTag": "Peri Bacaları & Volkanizma",
       "correctChain": {
         "causeRock": "rock_tuf",
         "causeForce": "force_akarsu",
