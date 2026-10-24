@@ -35,7 +35,7 @@ export interface Flashcard {
   category: LayerType;
   title: string;
   subtitle: string;
-  diagramType: 'boyunaKiyi' | 'enineKiyi' | 'horstGraben' | 'kivrimDag';
+  diagramType: 'boyunaKiyi' | 'enineKiyi' | 'horstGraben' | 'kivrimDag' | 'riaKiyi' | 'dalmacyaKiyi' | 'terraRossa' | 'cernozyom';
   frontHint: string;
   backLogic: {
     cause: string;

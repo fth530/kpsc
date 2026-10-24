@@ -8,7 +8,7 @@
       "svgPath": "M 480 260 L 530 250 L 550 300 L 510 330 L 460 300 Z",
       "centerCoords": { "x": 500, "y": 280 },
       "masteryPercentage": 75,
-      "description": "Türkiye'nin yüzölçümü en büyük ili. Karstik obruk platoları ve tahıl ambarı ile ünlü."
+      "description": "Türkiye'nin yüzölçümü en büyük ili. Karstik Obruk Platosu, Kızören Obruğu ve tahıl ambarı ile ünlü."
     },
     {
       "id": "07",
@@ -17,7 +17,79 @@
       "svgPath": "M 380 320 L 440 310 L 470 350 L 400 370 Z",
       "centerCoords": { "x": 420, "y": 340 },
       "masteryPercentage": 80,
-      "description": "Teke ve Taşeli platoları, polye ve dolin gibi karstik şekillerin yoğun olduğu turizm ve tarım merkezi."
+      "description": "Teke ve Taşeli platoları, polye ve dolin gibi karstik şekiller, Finike-Kaş Dalmaçya kıyıları."
+    },
+    {
+      "id": "48",
+      "name": "Muğla",
+      "region": "Ege",
+      "svgPath": "M 300 330 L 350 330 L 340 370 L 290 360 Z",
+      "centerCoords": { "x": 320, "y": 350 },
+      "masteryPercentage": 85,
+      "description": "Menteşe Dağları kıyıya paralel uzandığı için fazla yağış alır. Ria kıyı tipi (Muğla-Güneybatı Ege) ve çam balı."
+    },
+    {
+      "id": "35",
+      "name": "İzmir",
+      "region": "Ege",
+      "svgPath": "M 250 250 L 290 250 L 290 290 L 250 290 Z",
+      "centerCoords": { "x": 270, "y": 270 },
+      "masteryPercentage": 90,
+      "description": "Enine Kıyı Tipi, dağlar kıyıya dik uzanır. Gediz Deltası, horst-graben kırıklı arazi ve geniş hinterlant."
+    },
+    {
+      "id": "53",
+      "name": "Rize",
+      "region": "Karadeniz",
+      "svgPath": "M 750 110 L 780 110 L 780 140 L 750 140 Z",
+      "centerCoords": { "x": 765, "y": 125 },
+      "masteryPercentage": 70,
+      "description": "Boyuna kıyı tipi, Kaçkar Kıvrım Dağları, Türkiye'nin en fazla yağış alan ili ve Çayeli Bakır Madeni."
+    },
+    {
+      "id": "08",
+      "name": "Artvin",
+      "region": "Karadeniz",
+      "svgPath": "M 790 100 L 830 100 L 830 130 L 790 130 Z",
+      "centerCoords": { "x": 810, "y": 115 },
+      "masteryPercentage": 65,
+      "description": "Murgul Bakır İşletmeleri, Çoruh Nehri yarmavadi ve dik dik kıvrım dağlık arazi."
+    },
+    {
+      "id": "25",
+      "name": "Erzurum",
+      "region": "Doğu Anadolu",
+      "svgPath": "M 750 180 L 800 180 L 800 220 L 750 220 Z",
+      "centerCoords": { "x": 775, "y": 200 },
+      "masteryPercentage": 60,
+      "description": "Erzurum-Kars Volkanik Platosu, sert karasal iklim, çayır bitki örtüsü ve verimli Çernozyom (Kara Toprak)."
+    },
+    {
+      "id": "63",
+      "name": "Şanlıurfa",
+      "region": "Güneydoğu Anadolu",
+      "svgPath": "M 700 320 L 760 320 L 760 360 L 700 360 Z",
+      "centerCoords": { "x": 730, "y": 340 },
+      "masteryPercentage": 55,
+      "description": "GAP'ın merkezi, Karacadağ yayvan kalkan volkanı, Harran ve Şanlıurfa karasal platoları."
+    },
+    {
+      "id": "37",
+      "name": "Kastamonu",
+      "region": "Karadeniz",
+      "svgPath": "M 500 100 L 550 100 L 550 140 L 500 140 Z",
+      "centerCoords": { "x": 525, "y": 120 },
+      "masteryPercentage": 50,
+      "description": "Küre Kıvrım Dağları, Küre Bakır Yatakları ve Ilgaz Dağları."
+    },
+    {
+      "id": "26",
+      "name": "Eskişehir",
+      "region": "İç Anadolu",
+      "svgPath": "M 390 200 L 440 200 L 440 240 L 390 240 Z",
+      "centerCoords": { "x": 415, "y": 220 },
+      "masteryPercentage": 80,
+      "description": "Eskişehir-Kırka Bor Mineralleri tesisi, Lületaşı ve Porsuk Çayı düzlüğü."
     },
     {
       "id": "50",
@@ -26,40 +98,39 @@
       "svgPath": "M 550 230 L 580 230 L 580 260 L 550 260 Z",
       "centerCoords": { "x": 565, "y": 245 },
       "masteryPercentage": 90,
-      "description": "Erciyes ve Hasan Dağı tüflerinin aşınmasıyla oluşan Peri Bacaları ve Kapadokya bölgesi."
+      "description": "Erciyes ve Hasan Dağı tüflerinin aşınmasıyla oluşan Kapadokya Peri Bacaları."
     },
     {
-      "id": "13",
-      "name": "Bitlis",
-      "region": "Doğu Anadolu",
-      "svgPath": "M 820 220 L 860 210 L 870 250 L 830 250 Z",
-      "centerCoords": { "x": 845, "y": 230 },
-      "masteryPercentage": 45,
-      "description": "Nemrut Dağı Kalderası ve Van Gölü çevresindeki volkanik oluşumlar."
-    },
-    {
-      "id": "72",
-      "name": "Batman",
-      "region": "Güneydoğu Anadolu",
-      "svgPath": "M 800 280 L 830 280 L 830 310 L 800 310 Z",
-      "centerCoords": { "x": 815, "y": 295 },
-      "masteryPercentage": 60,
-      "description": "Raman Dağı Türkiye'de petrolün ilk çıkarıldığı önemli maden ve enerji bölgesi."
-    },
-    {
-      "id": "61",
-      "name": "Trabzon",
-      "region": "Karadeniz",
-      "svgPath": "M 700 120 L 740 120 L 740 150 L 700 150 Z",
-      "centerCoords": { "x": 720, "y": 135 },
-      "masteryPercentage": 50,
-      "description": "Boyuna kıyı tipi, dik dağlar ve Podzolik/Kahverengi Orman toprakları."
+      "id": "33",
+      "name": "Mersin",
+      "region": "Akdeniz",
+      "svgPath": "M 480 340 L 540 330 L 530 380 L 480 370 Z",
+      "centerCoords": { "x": 510, "y": 355 },
+      "masteryPercentage": 70,
+      "description": "Taşeli Platosu uzantısı, Cennet-Cehennem Obrukları, Sertavul Geçidi ve Çukurova delta komşusu."
     }
   ],
   "features": [
     {
+      "id": "f_mente_daglari",
+      "title": "Menteşe Dağları (Muğla)",
+      "category": "mountains",
+      "provinceId": "48",
+      "coords": { "x": 320, "y": 350 },
+      "badgeText": "Kırık Dağ / Paralel Uzanış",
+      "examFrequency": "%95 ÖSYM Favorisi",
+      "formationLogic": {
+        "cause": "Horst Yapısı + Kıyıya Paralel Uzanış",
+        "effect": "Muğla Yöresinde Aşırı Yağış ve Engebeli Arazi",
+        "summary": "Ege'deki diğer dağların aksine kıyıya PARALEL uzandığı için nemli denizel havayı engeller ve orografik yağış bırakır."
+      },
+      "visualHint": "Ege kıyısında dağların denize paralel uzandığı istisnai dağlık alan.",
+      "examTip": "KPSS Soru Tuzağı: Ege'de her dağ denize dik uzanmaz! Menteşe Dağları kıyıya PARALELDİR ve Muğla çok yağış alır.",
+      "pastExamYears": [2019, 2022, 2023]
+    },
+    {
       "id": "f_obruk_karapinar",
-      "title": "Karapınar Obruk Platosu",
+      "title": "Karapınar Obruk Platosu & Kızören Obruğu",
       "category": "karst",
       "provinceId": "42",
       "coords": { "x": 500, "y": 275 },
@@ -75,55 +146,72 @@
       "pastExamYears": [2021, 2023]
     },
     {
-      "id": "f_nemrut_kaldera",
-      "title": "Nemrut Dağı Kalderası",
-      "category": "mountains",
-      "provinceId": "13",
-      "coords": { "x": 845, "y": 225 },
-      "badgeText": "Volkanik Kaldera",
-      "examFrequency": "%85 Çıkma İhtimali",
+      "id": "f_teke_taseli",
+      "title": "Teke ve Taşeli Platoları",
+      "category": "karst",
+      "provinceId": "07",
+      "coords": { "x": 420, "y": 340 },
+      "badgeText": "Karstik Plato / Seyrek Nüfus",
+      "examFrequency": "%90 ÖSYM Favorisi",
       "formationLogic": {
-        "cause": "Volkanik Patlama + Tepe Çökmesi",
-        "effect": "Kaldera Gölü (Nemrut Gölü)",
-        "summary": "Volkan konisinin patlama sonrası çökmesiyle oluşan Türkiye'nin en büyük kaldera gölüdür."
+        "cause": "Gözenekli Kalker Arazi + Suyu Yeraltına Geçirme",
+        "effect": "Yüzey Suyu Yetersizliği -> Tarıma Elverişsiz -> Kıl Keçisi Hayvancılığı",
+        "summary": "Karstik erime sonucu delikli yapı suyu tutmaz, yüzey akarsuyu azdır. Bu yüzden seyrek nüfusludur."
       },
-      "visualHint": "Yanardağ tepesinde patlama ile oluşan devasa çanak ve içindeki göl.",
-      "examTip": "Nemrut Dağı Bitlis'tedir (Adıyaman'daki Nemrut Kommagene heykelleri ile karıştırma!).",
+      "visualHint": "Akdeniz'de delikli kireçtaşı kayalıkları ve su geçiren yapısıyla engebeli plato.",
+      "examTip": "Akdeniz kıyısında iklim ılıman olmasına rağmen Teke ve Taşeli Platoları engebeli karstik yapısı nedeniyle SEYREK NÜFUSLUDUR.",
       "pastExamYears": [2020, 2022]
     },
     {
-      "id": "f_peri_bacalari",
-      "title": "Kapadokya Peri Bacaları",
-      "category": "karst",
-      "provinceId": "50",
-      "coords": { "x": 565, "y": 245 },
-      "badgeText": "Tüf & Akarsu Aşınımı",
-      "examFrequency": "%90 ÖSYM Favorisi",
+      "id": "f_bakir_kader",
+      "title": "Küre & Murgul Bakır Yatakları (KaDeR)",
+      "category": "mines",
+      "provinceId": "37",
+      "coords": { "x": 525, "y": 120 },
+      "badgeText": "Maden / Bakır",
+      "examFrequency": "%90 Çıkma İhtimali",
       "formationLogic": {
-        "cause": "Volkanik Tüf + Akarsu ve Rüzgar Aşınımı",
-        "effect": "Şapkalı Peri Bacaları",
-        "summary": "Volkanlardan çıkan bazalt ve tüf tabakalarının sel suları ve rüzgarla farklı dirençte aşınması."
+        "cause": "Hidrotermal Damar Madenleşmesi",
+        "effect": "Küre (Kastamonu), Murgul (Artvin), Çayeli (Rize), Maden (Elazığ), Ergani (Diyarbakır)",
+        "summary": "Türkiye bakır rezervi açısından zengindir. Şifresi 'KaDeR' olarak kodlanır."
       },
-      "visualHint": "Üstte sert bazalt şapka, altta yumuşak tüf sütun.",
-      "examTip": "Peri bacalarının oluşumunda hem İÇ KUVVET (Volkanizma) hem DIŞ KUVVET (Akarsu/Rüzgar) etkilidir.",
-      "pastExamYears": [2019, 2023]
+      "visualHint": "Kuzey ve Doğu Anadolu kıvrım kuşaklarında bakır çıkarım alanları.",
+      "examTip": "KPSS Bakır Şifresi: Kastamonu (Küre), Artvin (Murgul), Diyarbakır (Ergani), Elazığ (Maden), Rize (Çayeli) -> KaDeR!",
+      "pastExamYears": [2018, 2021, 2023]
     },
     {
-      "id": "f_raman_petrol",
-      "title": "Raman Dağı Petrol Sahası",
+      "id": "f_bor_kirka",
+      "title": "Eskişehir (Kırka) & Balıkesir Bor Tesisleri",
       "category": "mines",
-      "provinceId": "72",
-      "coords": { "x": 815, "y": 295 },
-      "badgeText": "Enerji / Petrol",
-      "examFrequency": "%80 Çıkma İhtimali",
+      "provinceId": "26",
+      "coords": { "x": 415, "y": 220 },
+      "badgeText": "Stratejik Maden / Bor",
+      "examFrequency": "%95 ÖSYM Favorisi",
       "formationLogic": {
-        "cause": "Organik Tortullaşma + Jeolojik Kapan",
-        "effect": "Ham Petrol Rezervi",
-        "summary": "Türkiye'de ilk petrolün çıkarıldığı (1940) yer Raman Dağı'dır."
+        "cause": "Gölsel Tortullaşma + Volkanik Bor Gazı Çökelleri",
+        "effect": "Dünya Bor Rezervinin %73'ü Türkiye'de",
+        "summary": "Eskişehir (Kırka), Balıkesir (Bigadiç, Susurluk), Kütahya (Emet), Bursa (Mustafakemalpaşa)."
       },
-      "visualHint": "Güneydoğu Anadolu kırıklı yapısında petrol kuyuları.",
-      "examTip": "Batman - Raman denince akla ilk gelen yerli petrol üretimidir.",
-      "pastExamYears": [2018, 2021]
+      "visualHint": "İç Batı Anadolu gölsel alanlarında beyaz evaporit bor kristalleri.",
+      "examTip": "Dünya rezerv birincisi olduğumuz bor mineralleri Güney Marmara ve İç Batı Anadolu'da toplanmıştır.",
+      "pastExamYears": [2019, 2022]
+    },
+    {
+      "id": "f_cernozyom_erzurum",
+      "title": "Erzurum-Kars Çernozyom (Kara Toprak)",
+      "category": "soils",
+      "provinceId": "25",
+      "coords": { "x": 775, "y": 200 },
+      "badgeText": "En Verimli Zonal Toprak",
+      "examFrequency": "%85 Çıkma İhtimali",
+      "formationLogic": {
+        "cause": "Sert Karasal İklim +Yaz Yağışları + Uzun Çayır Otları",
+        "effect": "Humusça Zengin Çernozyom Toprağı",
+        "summary": "Çayırların kışın çürümesiyle oluşan en verimli topraktır ancak sert iklim yüzünden tarım kısıtlıdır, büyükbaş hayvancılık yapılır."
+      },
+      "visualHint": "Yüksek volkanik platoda gür çayırlar altında koyu siyah humuslu katman.",
+      "examTip": "Çernozyom en verimli topraktır FAKAT Erzurum-Kars iklimi çok soğuk ve yazları kısa olduğu için tarımsal verim düşüktür!",
+      "pastExamYears": [2020, 2023]
     }
   ],
   "flashcards": [
@@ -136,9 +224,9 @@
       "frontHint": "Dağların denize PARALEL uzandığı kıyılarda görülür. Falez (yalıyar) yaygındır.",
       "backLogic": {
         "cause": "Dağların kıyı çizgisine paralel uzanması + Dalga aşındırması",
-        "effect": "Koy, körfez, doğal liman azdır. Hinterlant (art bölge) dar, ulaşım geçitlerle sağlanır.",
-        "mnemonic": "BOYUNA = Paralel Dağlar + Dik Falezler",
-        "examTip": "KPSS'de 'Hangi kıyıda falez oluşumu ve kıyı ile iç kesim arası ulaşım zordur?' yanıtı Boyuna Kıyı Tipi'dir."
+        "effect": "Koy, körfez, doğal liman azdır. Hinterlant (art bölge) dar, ulaşım geçitlerle (Zigana, Kop, Belen) sağlanır.",
+        "mnemonic": "BOYUNA = Paralel Dağlar + Dik Falezler + Geçitler (Kop, Zigana)",
+        "examTip": "KPSS'de 'Hangi kıyıda falez oluşumu fazla, kıta sahanlığı dar ve iç kesimle ulaşım zordur?' yanıtı Boyuna Kıyı Tipi'dir."
       }
     },
     {
@@ -150,8 +238,8 @@
       "frontHint": "Dağların denize DİK uzandığı kıyılarda görülür. Girinti-çıkıntı ve koy sayısı çoktur.",
       "backLogic": {
         "cause": "Horst ve Grabenlerin denize dik dik uzanması",
-        "effect": "Kıyı ile iç kesim arası ulaşım kolaydır, denizel iklim iç kesimlere sokulur.",
-        "mnemonic": "ENİNE = Dik Dağlar + Geniş Hinterlant",
+        "effect": "Kıyı ile iç kesim arası ulaşım kolaydır, denizel iklim iç kesimlere sokulur, deltalarda birikim çoktur.",
+        "mnemonic": "ENİNE = Dik Dağlar + Geniş Hinterlant + Geniş Kıta Sahanlığı",
         "examTip": "Ege'de gerçek kıyı uzunluğu ile kuş uçuşu kıyı uzunluğu arasındaki farkın fazla olmasının nedeni Enine Kıyı Tipi'dir."
       }
     },
@@ -165,8 +253,8 @@
       "backLogic": {
         "cause": "Sert Arazi Ara Tabakası + Tektonik Sıkışma",
         "effect": "Horst (Yüksek Dağlar: Yunt, Bozdağ, Aydın) / Graben (Çöküntü Ovası: Gediz, Menderes)",
-        "mnemonic": "KIRIK = Horst (Yüksek) + Graben (Çöküntü)",
-        "examTip": "KPSS Şifresi: Kaz, Madra, Yunt, Bozdağlar, Aydın, Menteşe dağları (KazMa Yutmuş Boz Ayı Menteşeli) Kırık dağlardır!"
+        "mnemonic": "KIRIK DAĞ ŞİFRESİ: KazMa Yutmuş Boz Ayı Menteşeli!",
+        "examTip": "KPSS Şifresi: Kaz, Madra, Yunt, Bozdağlar, Aydın, Menteşe dağları kırık dağlardır! Graben alanlarında fay hatları ve sıcak su kaynakları yaygındır."
       }
     },
     {
@@ -179,8 +267,36 @@
       "backLogic": {
         "cause": "Esnek Tortul Tabaka + Orojenez (Dağ Oluşumu)",
         "effect": "Yüksek Kısım: Antiklinal / Çukur Kısım: Senklinal",
-        "mnemonic": "KIVRIM = Esnek Katman + Antiklinal/Senklinal",
+        "mnemonic": "KIVRIM = Esnek Katman + Antiklinal (Yüksek) + Senklinal (Çukur)",
         "examTip": "Türkiye'deki dağların büyük çoğunluğu (Kuzey Anadolu Dağları ve Toroslar) KIVRIM dağlarıdır."
+      }
+    },
+    {
+      "id": "fc5",
+      "category": "coasts",
+      "title": "Ria Kıyı Tipi",
+      "subtitle": "Boğazlar ve Muğla (Güneybatı Ege)",
+      "diagramType": "riaKiyi",
+      "frontHint": "Eski akarsu vadilerinin deniz seviyesi yükselmesi (Epeirojenez) sonucu sular altında kalmasıyla oluşur.",
+      "backLogic": {
+        "cause": "Akarsu Vadisinin Deniz Suları Altında Kalması",
+        "effect": "İstanbul Boğazı, Çanakkale Boğazı, Haliç ve Muğla-Güneybatı Ege Kıyıları",
+        "mnemonic": "RİA = Vadilerin Suya Gömülmesi (Boğazlar & Haliç)",
+        "examTip": "İstanbul ve Çanakkale boğazları eski birer akarsu vadisiyken RİA kıyı tipine dönüşmüştür."
+      }
+    },
+    {
+      "id": "fc6",
+      "category": "coasts",
+      "title": "Dalmaçya Kıyı Tipi",
+      "subtitle": "Finike - Kaş (Antalya) Kıyıları",
+      "diagramType": "dalmacyaKiyi",
+      "frontHint": "Kıyıya paralel uzanan dağların deniz suları altında kalmasıyla dağ tepelerinin kıyıya paralel adalara dönüşmesidir.",
+      "backLogic": {
+        "cause": "Kıyıya Paralel Dağların Transgresyon ile Yutulması",
+        "effect": "Antalya Finike - Kaş Kıyıları ve Kıyı Önü Paratell Adacıklar",
+        "mnemonic": "DALMAÇYA = Benekli Adalar (Finike - Kaş)",
+        "examTip": "Türkiye'de Dalmaçya Kıyı Tipi SADECE Antalya'nın Finike-Kaş kıyı şeridinde görülür!"
       }
     }
   ],
@@ -224,6 +340,24 @@
       "provinceOptions": ["Nevşehir", "Kayseri", "Niğde", "Aksaray"],
       "correctProvinceId": "50",
       "explanation": "Nevşehir - Kapadokya bölgesinde Erciyes ve Hasan Dağı tüflerinin sel suları ve rüzgarla aşınmasıyla Peri Bacaları oluşmuştur.",
+      "xpReward": 20
+    },
+    {
+      "id": "q3",
+      "type": "typeA_logicChain",
+      "targetFeatureId": "f_bakir_kader",
+      "targetProvinceId": "37",
+      "questionText": "KPSS Bakır madeni şifresi 'KaDeR' içinde yer alan Küre maden sahası hangi ilimizdedir?",
+      "topicTag": "Madenler - Bakır (KaDeR)",
+      "correctChain": {
+        "causeRock": "rock_hidrotermal",
+        "causeForce": "force_madenlesme",
+        "resultFormation": "formation_bakir"
+      },
+      "chainOptions": [],
+      "provinceOptions": ["Kastamonu", "Artvin", "Rize", "Elazığ"],
+      "correctProvinceId": "37",
+      "explanation": "Bakır (KaDeR): Kastamonu (Küre), Artvin (Murgul), Diyarbakır (Ergani), Elazığ (Maden), Rize (Çayeli). Küre Kastamonu'dadır!",
       "xpReward": 20
     }
   ]

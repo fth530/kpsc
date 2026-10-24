@@ -6,16 +6,13 @@ import {
   SafeAreaView,
   TouchableOpacity,
   ScrollView,
-  Dimensions,
 } from 'react-native';
 import { useRouter } from 'expo-router';
-import Svg, { Path, Rect, Text as SvgText, Line, G } from 'react-native-svg';
+import Svg, { Path, Rect, Text as SvgText, Line, Circle } from 'react-native-svg';
 import { useGeographyStore } from '../store/useGeographyStore';
 import mockData from '../data/cografya_mock.json';
 import { Flashcard } from '../types/geography';
 import { ArrowLeft, RotateCw, CheckCircle, AlertTriangle, Sparkles, BookOpen } from 'lucide-react-native';
-
-const { width } = Dimensions.get('window');
 
 export default function FlashcardsScreen() {
   const router = useRouter();
@@ -58,16 +55,13 @@ export default function FlashcardsScreen() {
         return (
           <Svg viewBox="0 0 300 120" style={styles.svgDiagram}>
             <Rect width="300" height="120" fill="#F1F5F9" rx="12" />
-            {/* Sea */}
             <Rect x="0" y="60" width="120" height="60" fill="#38BDF8" opacity={0.6} />
             <SvgText x="60" y="95" fill="#0284C7" fontSize="11" fontWeight="bold" textAnchor="middle">
               DENİZ
             </SvgText>
-            {/* Parallel Mountains */}
             <Path d="M 120 120 L 140 30 L 170 120 Z" fill="#64748B" />
             <Path d="M 180 120 L 200 20 L 230 120 Z" fill="#475569" />
             <Path d="M 240 120 L 260 40 L 290 120 Z" fill="#334155" />
-            {/* Parallel Line Indicator */}
             <Line x1="120" y1="10" x2="290" y2="10" stroke="#10B981" strokeWidth="3" strokeDasharray="5,5" />
             <SvgText x="205" y="25" fill="#10B981" fontSize="10" fontWeight="bold" textAnchor="middle">
               Dağlar Denize PARALEL
@@ -79,12 +73,10 @@ export default function FlashcardsScreen() {
         return (
           <Svg viewBox="0 0 300 120" style={styles.svgDiagram}>
             <Rect width="300" height="120" fill="#F1F5F9" rx="12" />
-            {/* Sea */}
             <Rect x="0" y="0" width="100" height="120" fill="#38BDF8" opacity={0.6} />
             <SvgText x="50" y="65" fill="#0284C7" fontSize="11" fontWeight="bold" textAnchor="middle">
               EGE DENİZİ
             </SvgText>
-            {/* Perpendicular Mountains */}
             <Path d="M 100 20 L 280 20 L 280 40 L 100 40 Z" fill="#64748B" />
             <Path d="M 100 60 L 280 60 L 280 80 L 100 80 Z" fill="#475569" />
             <Path d="M 100 100 L 280 100 L 280 120 L 100 120 Z" fill="#334155" />
@@ -101,22 +93,49 @@ export default function FlashcardsScreen() {
         return (
           <Svg viewBox="0 0 300 120" style={styles.svgDiagram}>
             <Rect width="300" height="120" fill="#F1F5F9" rx="12" />
-            {/* Horst Block */}
             <Path d="M 20 100 L 20 30 L 90 30 L 90 100 Z" fill="#10B981" />
             <SvgText x="55" y="65" fill="#FFFFFF" fontSize="12" fontWeight="bold" textAnchor="middle">
               HORST
             </SvgText>
-            {/* Fault Line */}
             <Line x1="95" y1="20" x2="95" y2="110" stroke="#EF4444" strokeWidth="2" strokeDasharray="3,3" />
-            {/* Graben Block */}
             <Path d="M 100 100 L 100 70 L 190 70 L 190 100 Z" fill="#F59E0B" />
             <SvgText x="145" y="90" fill="#FFFFFF" fontSize="11" fontWeight="bold" textAnchor="middle">
               GRABEN
             </SvgText>
-            {/* Horst Block */}
             <Path d="M 200 100 L 200 30 L 280 30 L 280 100 Z" fill="#10B981" />
             <SvgText x="240" y="65" fill="#FFFFFF" fontSize="12" fontWeight="bold" textAnchor="middle">
               HORST
+            </SvgText>
+          </Svg>
+        );
+
+      case 'riaKiyi':
+        return (
+          <Svg viewBox="0 0 300 120" style={styles.svgDiagram}>
+            <Rect width="300" height="120" fill="#F1F5F9" rx="12" />
+            <Path d="M 10 10 L 120 10 L 100 110 L 10 110 Z" fill="#64748B" />
+            <Path d="M 180 10 L 290 10 L 290 110 L 200 110 Z" fill="#64748B" />
+            <Path d="M 120 10 L 180 10 L 200 110 L 100 110 Z" fill="#38BDF8" opacity={0.8} />
+            <SvgText x="150" y="60" fill="#0284C7" fontSize="11" fontWeight="bold" textAnchor="middle">
+              BOĞAZ / SULAR ALTI VADİ
+            </SvgText>
+          </Svg>
+        );
+
+      case 'dalmacyaKiyi':
+        return (
+          <Svg viewBox="0 0 300 120" style={styles.svgDiagram}>
+            <Rect width="300" height="120" fill="#38BDF8" opacity={0.6} rx="12" />
+            <Rect x="200" y="0" width="100" height="120" fill="#64748B" />
+            <SvgText x="250" y="65" fill="#FFFFFF" fontSize="11" fontWeight="bold" textAnchor="middle">
+              KARA
+            </SvgText>
+            <Circle cx="50" cy="30" r="14" fill="#10B981" />
+            <Circle cx="50" cy="80" r="18" fill="#10B981" />
+            <Circle cx="120" cy="40" r="20" fill="#10B981" />
+            <Circle cx="130" cy="90" r="12" fill="#10B981" />
+            <SvgText x="90" y="20" fill="#0284C7" fontSize="10" fontWeight="bold" textAnchor="middle">
+              Paralel Adacıklar (Finike - Kaş)
             </SvgText>
           </Svg>
         );
@@ -125,7 +144,6 @@ export default function FlashcardsScreen() {
         return (
           <Svg viewBox="0 0 300 120" style={styles.svgDiagram}>
             <Rect width="300" height="120" fill="#F1F5F9" rx="12" />
-            {/* Fold Curve Wave */}
             <Path
               d="M 10 90 Q 60 10 110 90 T 210 90 T 290 90"
               fill="none"
@@ -145,7 +163,6 @@ export default function FlashcardsScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* Header */}
       <View style={styles.header}>
         <TouchableOpacity style={styles.iconBtn} onPress={() => router.back()}>
           <ArrowLeft size={20} color="#0F172A" />
@@ -159,13 +176,11 @@ export default function FlashcardsScreen() {
       </View>
 
       <ScrollView contentContainerStyle={styles.content}>
-        {/* Flashcard Component */}
         <TouchableOpacity
           activeOpacity={0.9}
           style={styles.cardContainer}
           onPress={handleFlip}
         >
-          {/* Card Top Badge */}
           <View style={styles.cardHeader}>
             <View style={styles.categoryBadge}>
               <Sparkles size={14} color="#10B981" />
@@ -180,11 +195,9 @@ export default function FlashcardsScreen() {
           </View>
 
           {!isFlipped ? (
-            /* FRONT FACE */
             <View style={styles.frontFace}>
               <Text style={styles.cardTitle}>{currentCard.title}</Text>
 
-              {/* Diagram */}
               <View style={styles.diagramWrapper}>
                 {renderDiagram(currentCard.diagramType)}
               </View>
@@ -195,7 +208,6 @@ export default function FlashcardsScreen() {
               </View>
             </View>
           ) : (
-            /* BACK FACE */
             <View style={styles.backFace}>
               <Text style={styles.backTitle}>{currentCard.title} - Neden/Sonuç</Text>
 
@@ -210,7 +222,7 @@ export default function FlashcardsScreen() {
               </View>
 
               <View style={styles.mnemonicBox}>
-                <Text style={styles.mnemonicLabel}>💡 ŞİFRELİ MNETİK HAFIZASI:</Text>
+                <Text style={styles.mnemonicLabel}>💡 ŞİFRELİ HAFIZA:</Text>
                 <Text style={styles.mnemonicText}>{currentCard.backLogic.mnemonic}</Text>
               </View>
 
@@ -223,7 +235,6 @@ export default function FlashcardsScreen() {
         </TouchableOpacity>
       </ScrollView>
 
-      {/* Action Buttons */}
       <View style={styles.actionRow}>
         <TouchableOpacity
           style={[styles.actionBtn, styles.btnNeedsReview]}
@@ -290,7 +301,7 @@ const styles = StyleSheet.create({
   },
   cardContainer: {
     width: '100%',
-    minHeight: 400,
+    minHeight: 420,
     backgroundColor: '#FFFFFF',
     borderRadius: 24,
     padding: 18,
